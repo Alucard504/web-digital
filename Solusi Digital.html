@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SolusiDigital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito :wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style 1.css" />
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container flex justify-between items-center">
+      <h1 class="logo">Solusi Digital</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container text-center fade-in">
+      <h2 class="hero-title">Platform Manajemen Tugas Digital</h2>
+      <p class="hero-subtitle">Membantu semua menjadi lebih produktif dan terjadwal.</p>
+      <a href="#services" class="btn-primary">Jelajahi Layanan</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-white">
+    <div class="container text-center fade-in">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p class="section-text">
+        SolusiDigital.id adalah platform digital yang membantu pengguna mengatur tugas harian mereka secara efektif.
+        Dibuat agar menciptakan solusi digital sederhana namun bermanfaat bagi semua.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section bg-light">
+    <div class="container text-center fade-in">
+      <h2 class="section-title">Layanan Kami</h2>
+      <div class="grid md:grid-cols-3 gap-8 service-cards">
+        <div class="card card-hover">
+          <h3 class="card-title">Buat Daftar Tugas</h3>
+          <p>Tambahkan tugas harian, mingguan, atau bulanan dengan mudah dan cepat dalam satu klik.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 class="card-title">Pengingat Otomatis</h3>
+          <p>Sistem akan mengirim notifikasi jika waktu deadline mendekat agar tidak terlambat.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 class="card-title">Laporan Mingguan</h3>
+          <p>Dapatkan ringkasan produktivitas Anda setiap akhir minggu langsung di dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task Manager Simulation -->
+  <section class="section bg-white">
+    <div class="container fade-in">
+      <h2 class="section-title text-center mb-8">Penjadwalan Tugas</h2>
+      <div class="task-form">
+        <input type="text" id="taskInput" placeholder="Nama tugas..." class="input-task" />
+        <input type="date" id="deadlineInput" class="input-date" />
+        <button onclick="addTask()" class="btn-add">Tambah</button>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container fade-in">
+      <h2 class="section-title text-center mb-8">Kontak Kami</h2>
+      <form class="contact-form">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Nama Anda" required class="form-input" />
+          <input type="email" placeholder="Email Anda" required class="form-input" />
+        </div>
+        <textarea placeholder="Pesan Anda..." rows="4" required class="form-input mt-4"></textarea>
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2025 SolusiDigital</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="java 1.js"></script>
+</body>
+</html>
